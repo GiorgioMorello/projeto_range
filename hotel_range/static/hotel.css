@@ -1,0 +1,340 @@
+
+html {
+   font-family: sans-serif;
+}
+
+body, ul, li {
+   margin: 0;
+   padding: 0
+}
+
+
+h1, h2, h3, h4 {
+   font-family: "Oxygen";
+}
+
+
+
+
+img {
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+   max-width: 100%;
+}
+
+
+a {
+   display: block;
+   text-decoration: none;
+}
+
+ul, li {
+   list-style: none;
+}
+
+
+
+/* HEADER */
+
+.header {
+   text-align: center;
+   background-image: radial-gradient(closest-corner at 50% 66.5%, black, transparent);
+   background-position: bottom -50px;
+   background-repeat: no-repeat;
+}
+
+.header img {
+   margin: 10px;
+}
+
+.nav {
+   text-align: center;
+   background: #612674;
+}
+
+.nav ul {
+   padding: 10px 0;
+}
+
+.nav a {
+   font-size: 1.2em;
+   color: white;
+   padding: 16px;
+   transition: 0.3s
+
+}
+
+.nav ul li a:hover {
+   background: hsla(360deg, 50%, 100%, 0.3);
+}
+
+
+/* TOP-CONTENT */
+
+.top-content {
+   text-align: center;
+   background: #f6f6f6;
+   padding: 2em;
+}
+
+.icon-circle-right {
+   display: none;
+}
+
+.top-content h1 {
+   color: #612674;
+   font-size: 1.6em;
+   margin-bottom: 1.3em;
+
+}
+
+.top-content h2 {
+    font-size: 1.1em;
+    color: #a87bb7;
+}
+.btn {
+    display: inline-block;
+    background: #58c4c4;
+    padding: 16px 30px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: 0.3s
+}
+.btn:hover {
+   background: #20c4c4;
+}
+
+
+/* MIDDLE-CONTENT */
+
+.middle-content {
+   text-align: center;
+   padding: 2em;
+   background: #f6f6f6;
+}
+
+.middle-article span[class^="icon"] {
+    font-size: 4em;
+    color: #612674
+
+}
+
+.middle-article h3 {
+   font-size: 1.3em;
+   color: #612674;
+   letter-spacing: 2px;
+}
+
+.middle-article p {
+   font-size: 1.2em;
+   line-height: 1.2;
+   color: #222;
+}
+
+
+/* MAIN-CONTENT */
+
+.main-content {
+   text-align: left;
+   padding: 2em
+}
+
+.main-article {
+   margin-bottom: 4em
+}
+
+.main-article h3 {
+    color: #612674;
+    letter-spacing: 3px;
+    font-weight: normal;
+    font-size: 1.3em;
+}
+
+.main-article p {
+    font-size: 1.1em;
+}
+
+
+
+/* FOOTER */
+
+.hidden {
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+
+}
+
+.footer {
+    text-align: center;
+    background: #25303e;
+    color: #ddd;
+    padding-bottom: 2em;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    background: #303d4c;
+    padding: .5em;
+}
+
+.icon-footer li {
+    margin: 0 10px;
+}
+
+.icon-footer li a {
+    font-size: 1.5em;
+    color: white;
+    transition: 0.2s;
+}
+.icon-footer li a:hover {
+   color: #8E22C4
+}
+
+
+
+
+
+
+@media (min-width: 780px) {
+
+   .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: radial-gradient(closest-corner at 50% 66.5%, transparent, transparent);
+   }
+
+   .nav {
+    background: white;
+    margin-right: 1.5em;
+   }
+
+   .nav ul {
+    display: flex;
+    flex-wrap: wrap;
+   }
+
+   .nav ul li a {
+    color: #612674;
+    padding: 1em;
+    transition: 0.4s;
+    font-weight: 700
+   }
+
+   .nav ul li a:hover {
+    padding: 12px;
+    border-bottom: 2px solid hsla(360deg, 30%, 80%, 0.5);
+   }
+
+   .top-content{
+    background: #612674;
+    color: white
+   }
+
+   .icon-circle-right {
+    display: block;
+    font-size: 4.5em
+   }
+
+   .top-content h1 {
+   color: white;
+   font-size: 1.6em;
+   margin-bottom: 1.5em;
+   }
+
+
+
+   .top-content h2 {
+    font-size: 1.1em;
+    color: white;
+   }
+
+   .middle-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+   }
+
+   .clearfix::after {
+    content: ' ';
+    display: block;
+    clear: both;
+   }
+
+
+   .main-article a {
+    float: right;
+    margin-right: 4em;
+   }
+
+}
+
+@media (min-width: 1100px) {
+
+   .header {
+    width: 1300px;
+    margin: 0 auto;
+   }
+
+   .top-content {
+    background-color: #521a66;
+    background-image: url(img/bg_topo_1198x670.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    height: 33.5em;
+    padding-top: 10em;
+    box-sizing: border-box;
+   }
+
+}
+
+@media (min-width: 1350px) {
+
+   .top-content {
+    background-image: url(img/bg_topo_1600x1374.jpg);
+    background-position: center top;
+    height: 40em;
+    padding-top: 15em;
+    box-sizing: border-box;
+   }
+
+   .top-content span {
+    font-size: 7em;
+   }
+
+   .middle-content {
+    display: flex;
+    padding-top: 2.5em;
+   }
+
+
+
+   .main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .main-content a {
+    float: none;
+
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
